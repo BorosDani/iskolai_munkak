@@ -1,0 +1,66 @@
+// npm init -y (package.json)
+// nodemon index
+// npx nodemon index
+
+const e = require("express");
+const express = require("express");
+const app = express();
+const port = 3000;
+
+app.listen(port, function()
+{
+    console.log(`Server is running on port: ${port}`);
+})
+
+app.use(express.json());
+
+//Névtelen függvény
+app.get("/", function(req, res)
+{
+    res.send("Helló Világ!");
+});
+
+let users = 
+[
+    {
+        id: "1",
+        name: "Jimmy",
+        email: "jimmy@kiraly.hu"
+    },
+    {
+        id: "2",
+        name: "Brendon",
+        email: "brendon@bajnok.hu"
+    },
+    {
+        id: "3",
+        name: "Mollywood",
+        email: "molly@larissa.hu"
+    },
+]
+
+//Nyíl függvény
+app.get("/users", (req, res) => 
+{
+    res.json(users);
+});
+
+app.get("/users/:id", (req, res) => 
+{
+    const uid = req.params.id;
+    const user = users.find((u) => u.id == uid);
+    if (user) 
+    {
+        res.json(user);
+    } 
+    else 
+    {
+        res.send("<h1 style='color:red; background-color: black; text-align: center; font-size: 20rem; border-radius: 10rem; margin: 3rem 10rem; font-family: monospace'>User not found</h1>");
+    }
+})
+
+app.post("/users", (req, res) => 
+    {
+        users.push(req.body);
+        res.json(req.body);
+    });
