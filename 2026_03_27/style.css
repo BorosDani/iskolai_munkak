@@ -1,0 +1,29 @@
+body
+{
+    margin: auto;
+    padding: auto;
+    background-color: rgb(3, 28, 43);
+}
+
+.sportkcal_box
+{
+    margin-top: 25%;
+    text-align: center;
+}
+
+.adatTorles
+{
+    padding: 10px 20px;
+    background-color: rgb(185, 219, 240);
+    color: rgb(3, 28, 43);
+    border-radius: 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sportkcal_tabla table, td
+{
+    color: white;
+    border: 1px solid white;
+}
