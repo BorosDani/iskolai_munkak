@@ -1,0 +1,12 @@
+Z:\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\bin\Debug\Uzemanyag.exe.config
+Z:\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\bin\Debug\Uzemanyag.exe
+Z:\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\bin\Debug\Uzemanyag.pdb
+Z:\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\obj\Debug\Uzemanyag.csprojAssemblyReference.cache
+Z:\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\obj\Debug\Uzemanyag.exe
+Z:\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\obj\Debug\Uzemanyag.pdb
+\\dc1\tanulok\Boros.Daniel\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\bin\Debug\Uzemanyag.exe.config
+\\dc1\tanulok\Boros.Daniel\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\bin\Debug\Uzemanyag.exe
+\\dc1\tanulok\Boros.Daniel\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\bin\Debug\Uzemanyag.pdb
+\\dc1\tanulok\Boros.Daniel\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\obj\Debug\Uzemanyag.csprojAssemblyReference.cache
+\\dc1\tanulok\Boros.Daniel\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\obj\Debug\Uzemanyag.exe
+\\dc1\tanulok\Boros.Daniel\programozas_dolgozat\Uzemanyag\Uzemanyag\Uzemanyag\obj\Debug\Uzemanyag.pdb

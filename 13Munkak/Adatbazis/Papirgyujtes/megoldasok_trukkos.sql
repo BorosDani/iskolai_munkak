@@ -1,0 +1,35 @@
+﻿A feladatok megoldására elkészített SQL parancsokat illessze be a feladat sorszáma után!
+
+1. feladat:
+SELECT COUNT(DISTINCT(tanulo)) AS "Papírgyűjtésben résztvevők száma"
+	FROM leadasok
+
+2. feladat:
+SELECT COUNT(*) AS "A-val kezdődő nevűek száma"
+	FROM tanulok
+    WHERE nev LIKE("A%")
+
+3. feladat:
+SELECT LEFT(nev, 1) AS "Kezdőbetű", COUNT(*) AS "Darabszám"
+	FROM tanulok
+    GROUP BY Kezdőbetű
+    ORDER BY Kezdőbetű
+    
+/*substring is jó (mező neve, honnan, mennyit)*/
+
+4. feladat:
+SELECT LEFT(nev, 1) AS "Kezdőbetű"
+	FROM tanulok
+    GROUP BY Kezdőbetű
+    HAVING COUNT(*) >= 20
+    ORDER BY COUNT(*) DESC
+
+5. feladat:
+SELECT COUNT(*) AS "DB"
+	FROM leadasok
+    GROUP BY (mennyiseg / 100) > 20
+    
+6. feladat
+SELECT IF(mennyiseg > 2000, "Súlyos tételek", "Könnyű tételek") AS "Kategorizálás", COUNT(*) AS DB
+    FROM leadasok
+    GROUP BY (mennyiseg > 2000)
