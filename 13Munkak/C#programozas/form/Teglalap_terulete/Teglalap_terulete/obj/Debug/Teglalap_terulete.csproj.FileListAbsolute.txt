@@ -1,0 +1,9 @@
+Z:\programozas\FORMOK\Teglalap_terulete\Teglalap_terulete\bin\Debug\Teglalap_terulete.exe.config
+Z:\programozas\FORMOK\Teglalap_terulete\Teglalap_terulete\bin\Debug\Teglalap_terulete.exe
+Z:\programozas\FORMOK\Teglalap_terulete\Teglalap_terulete\bin\Debug\Teglalap_terulete.pdb
+Z:\programozas\FORMOK\Teglalap_terulete\Teglalap_terulete\obj\Debug\Teglalap_terulete.csprojAssemblyReference.cache
+Z:\programozas\FORMOK\Teglalap_terulete\Teglalap_terulete\obj\Debug\Teglalap_terulete.Form1.resources
+Z:\programozas\FORMOK\Teglalap_terulete\Teglalap_terulete\obj\Debug\Teglalap_terulete.Properties.Resources.resources
+Z:\programozas\FORMOK\Teglalap_terulete\Teglalap_terulete\obj\Debug\Teglalap_terulete.csproj.GenerateResource.cache
+Z:\programozas\FORMOK\Teglalap_terulete\Teglalap_terulete\obj\Debug\Teglalap_terulete.exe
+Z:\programozas\FORMOK\Teglalap_terulete\Teglalap_terulete\obj\Debug\Teglalap_terulete.pdb

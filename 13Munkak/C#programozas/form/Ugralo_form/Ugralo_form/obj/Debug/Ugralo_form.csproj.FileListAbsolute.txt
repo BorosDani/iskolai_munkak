@@ -1,0 +1,9 @@
+Z:\programozas\FORMOS\Ugralo_form\Ugralo_form\bin\Debug\Ugralo_form.exe.config
+Z:\programozas\FORMOS\Ugralo_form\Ugralo_form\bin\Debug\Ugralo_form.exe
+Z:\programozas\FORMOS\Ugralo_form\Ugralo_form\bin\Debug\Ugralo_form.pdb
+Z:\programozas\FORMOS\Ugralo_form\Ugralo_form\obj\Debug\Ugralo_form.csprojAssemblyReference.cache
+Z:\programozas\FORMOS\Ugralo_form\Ugralo_form\obj\Debug\Ugralo_form.Form1.resources
+Z:\programozas\FORMOS\Ugralo_form\Ugralo_form\obj\Debug\Ugralo_form.Properties.Resources.resources
+Z:\programozas\FORMOS\Ugralo_form\Ugralo_form\obj\Debug\Ugralo_form.csproj.GenerateResource.cache
+Z:\programozas\FORMOS\Ugralo_form\Ugralo_form\obj\Debug\Ugralo_form.exe
+Z:\programozas\FORMOS\Ugralo_form\Ugralo_form\obj\Debug\Ugralo_form.pdb
