@@ -1,0 +1,167 @@
+//infojegyzet.hu/repter
+
+
+1. Feladat
+
+SELECT COUNT(DISTINCT type)
+	FROM airports
+
+
+2. Feladat
+
+SELECT DISTINCT type
+	FROM airports
+
+
+3. Feladat
+
+SELECT COUNT(type)
+	FROM airports
+    	WHERE type = "large_airport"
+
+
+4. Feladat
+
+SELECT COUNT(type)
+	FROM airports
+    	WHERE type LIKE "%_airport"
+
+
+5. Feladat
+
+SELECT COUNT(DISTINCT continent), COUNT(DISTINCT iso_country), COUNT(type)
+	FROM airports
+    	WHERE type = "heliport"
+
+
+6. Feladat
+
+SELECT type, COUNT(type)
+	FROM airports
+    	GROUP BY type
+
+
+7. Feladat
+
+SELECT name, latitude_deg
+	FROM airports
+    	WHERE type LIKE "%_airport"
+    	ORDER BY latitude_deg DESC
+    	LIMIT 1
+
+
+8. Feladat
+
+SELECT continent
+	FROM airports
+    	GROUP BY continent
+
+
+9. Feladat
+
+SELECT municipality
+	FROM airports
+    	WHERE type LIKE "%_airport"
+    	ORDER BY latitude_deg DESC
+    	LIMIT 1
+
+
+10. Feladat
+
+SELECT COUNT(*)
+	FROM airports
+    	WHERE continent = "AN" AND type LIKE "%_airport"
+
+
+11. Feladat
+
+SELECT continent, COUNT(*)
+	FROM airports
+    	WHERE type LIKE "%_airport"
+    	GROUP BY continent
+
+12. Feladat
+
+SELECT iso_country, COUNT(*)
+	FROM airports
+    	WHERE type LIKE "%_airport"
+    	GROUP BY iso_country
+    	ORDER BY COUNT(*) DESC
+    	LIMIT 15
+
+13. Feladat
+
+SELECT code, name
+	FROM countries
+    	WHERE code = "CO" OR code = "PG" OR code = "ZA"
+
+
+14. Feladat
+
+SELECT continent, name
+	FROM countries
+    	WHERE continent = "AN"
+
+15. Feladat
+
+SELECT COUNT(DISTINCT name)
+	FROM countries
+
+
+16. Feladat
+
+SELECT COUNT(DISTINCT iso_country)
+	FROM airports
+
+
+17. Feladat
+
+SELECT * 
+	FROM countries
+    	WHERE code NOT IN (SELECT iso_country FROM airports)
+
+18. Feladat
+
+SELECT code, name, continent
+	FROM countries
+    	WHERE code IN (SELECT iso_country FROM airports
+    	WHERE iso_country NOT IN (SELECT iso_country FROM airports WHERE type!='heliport' AND type != 'closed'))
+
+19. Feladat
+
+SELECT name, continent
+	FROM countries
+    	WHERE name = "Russia" OR name = "Turkey"
+
+20. Feladat
+
+SELECT iso_country, 
+	COUNT(IF(continent = "EU", 1, null)) AS "Europe", 
+    	COUNT(IF(continent = "AS", 1 , null)) AS "Asia"
+    
+	FROM airports
+    	WHERE (iso_country = "RU" OR iso_country = "TR")
+    	GROUP BY iso_country
+    	ORDER BY 1
+
+21. Feladat
+
+SELECT name, type, municipality, iso_country, continent, latitude_deg, longitude_deg
+	FROM airports
+    	WHERE longitude_deg >= 60.35 AND iso_country = "RU" AND continent = "EU"
+    	ORDER BY SIGN(longitude_deg) DESC, longitude_deg
+
+22. Feladat
+
+UPDATE airports SET continent = "AS"
+	WHERE iso_country = "RU" AND continent = "EU"
+	AND (longitude_deg > 60.35 OR longitude_deg < 0)
+
+SELECT name, type, municipality, iso_country, continent, latitude_deg, longitude_deg
+	FROM airports
+    	WHERE longitude_deg >= 60.35 AND iso_country = "RU" AND continent = "AS"
+    	ORDER BY SIGN(longitude_deg) DESC, longitude_deg
+
+
+
+23. Feladat

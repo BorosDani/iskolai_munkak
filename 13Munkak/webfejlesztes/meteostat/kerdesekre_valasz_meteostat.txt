@@ -1,0 +1,41 @@
+1. Feladat
+SELECT phely, COUNT(*) AS "Létező", (219168 - COUNT(*)) AS "Nem létező"
+	FROM met_adat
+    	INNER JOIN met_meropont ON met_adat.apid = met_meropont.pid
+    	GROUP BY phely
+
+
+2. Feladat
+SELECT YEAR(date), COUNT(*) AS "Létező", IF(YEAR(date) % 4 = 0, 8784-COUNT(*), 8760-COUNT(*)) AS "Nem létező"
+	FROM met_adat
+    	INNER JOIN met_meropont ON met_adat.apid = met_meropont.pid
+    	WHERE phely = "Budapest"
+    	GROUP BY YEAR(date)
+
+
+3. Feladat
+
+CREATE TEMPORARY TABLE datumok ( nap date, ora int(11) );
+
+DELIMITER //
+
+FOR i IN 1..9132     --  25 év x 365 nap/év + 7 szökőnap = 9132 nap
+DO
+  FOR j IN 0..23     --  órák az egyes napokon belül
+  DO
+    INSERT INTO datumok VALUES ( DATE_ADD( CONVERT("1999-12-31",DATE) , INTERVAL i DAY ) , j );
+  END FOR;
+END FOR;
+//
+
+DELIMITER ;
+
+SELECT DISTINCT nap FROM datumok 
+WHERE CONCAT( nap, ora )NOT IN ( SELECT DISTINCT CONCAT(date, hour) FROM met_adat WHERE apid = 4 )
+ORDER BY nap DESC , ora DESC
+LIMIT 0,4000
+
+
+4. Feladat
+
+5. Feladat

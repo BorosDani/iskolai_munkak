@@ -1,0 +1,11 @@
+	adatok
+----------------------
+id
+helyszinek_id
+vizallas
+datum
+
+	helyszinek
+----------------------
+id
+helyek
