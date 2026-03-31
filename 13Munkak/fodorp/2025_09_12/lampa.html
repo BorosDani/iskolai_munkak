@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="pic_bulboff.gif"  id="izzo">
+    <button onclick="kapcsolo()" id="gomb">Fel / Le</button>
+
+    <script>
+        function kapcsolo(){
+            const izzo = document.getElementById("izzo");
+
+            if (izzo.value == "fent"){
+                izzo.src = "pic_bulboff.gif"
+                izzo.value = "lent"
+            }else{
+                izzo.src = "pic_bulbon.gif"
+                izzo.value = "fent"
+            }
+        }
+    </script>
+</body>
+</html>

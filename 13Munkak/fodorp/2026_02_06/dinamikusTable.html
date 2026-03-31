@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamikus táblázat</title>
+</head>
+<style>
+    table
+    {
+        width: 100%;
+        border-radius: 10px;
+        border: 5px solid darkcyan;
+    }
+
+    th,td
+    {
+        padding: 0.5rem;
+        width: 10%;
+        border-radius: 10px;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    td
+    {
+        border: 2px solid rgb(36, 97, 97);
+    }
+
+    th
+    {
+        padding: 1rem 0.5rem;
+    }
+
+    #ujsor
+    {
+        margin: 2rem 0.5rem;
+        padding: 0.5rem;
+        width: 15%;
+        border-radius: 10px;
+        transition: all ease 0.3s;
+        border: 3px solid darkcyan;
+        background-color: rgb(171, 255, 255);
+        cursor: pointer;
+        
+    }
+
+    #ujsor:hover
+    {
+        transform: scale(1.05);
+        box-shadow: 1px 1px 10px;
+        border: 3px solid rgb(6, 73, 73);
+        background-color: rgb(27, 82, 82);
+        color: white;
+    }
+</style>
+<body>
+    <button id="ujsor">Új sor</button>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Név</th>
+            <th>Email</th>
+        </tr>
+    </table>
+</body>
+</html>
+
+<script>
+
+    ujsor.onclick = addTR;
+    function addTR()
+    {
+        const table = document.querySelector("table");
+        const tr = document.createElement("tr");
+        table.appendChild(tr);
+        addTD(tr, "Larissa");
+        addTD(tr, "Kristály");
+        addTD(tr, "Töltőgáz");
+    }
+
+    function addTD(parent, text)
+    {
+        const tr = document.querySelector("tr");
+        const td = document.createElement("td");
+        td.innerText = text;
+        parent.appendChild(td);
+    }
+</script>

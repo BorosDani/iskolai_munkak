@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamikus táblázat</title>
+</head>
+<style>
+    table
+    {
+        width: 100%;
+        border-radius: 10px;
+        border: 5px solid darkcyan;
+    }
+
+    th,td
+    {
+        padding: 0.5rem;
+        width: 10%;
+        border-radius: 10px;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    td
+    {
+        border: 2px solid rgb(36, 97, 97);
+    }
+
+    th
+    {
+        padding: 1rem 0.5rem;
+    }
+
+    #ujsor
+    {
+        margin: 2rem 0.5rem;
+        padding: 0.5rem;
+        width: 15%;
+        border-radius: 10px;
+        transition: all ease 0.3s;
+        border: 3px solid darkcyan;
+        background-color: rgb(171, 255, 255);
+        cursor: pointer;
+        
+    }
+
+    #ujsor:hover
+    {
+        transform: scale(1.05);
+        box-shadow: 1px 1px 10px;
+        border: 3px solid rgb(6, 73, 73);
+        background-color: rgb(27, 82, 82);
+        color: white;
+    }
+</style>
+<body>
+    <!--<button id="ujsor">Új sor</button>-->
+    <h2>Táblázat tömb elemeiből</h2>
+    <table>
+        <!--
+        <tr>
+            <th>ID</th>
+            <th>Név</th>
+            <th>Email</th>
+        </tr>
+        -->
+    </table>
+</body>
+</html>
+
+<script>
+    const fejlec = ["ID", "Név", "Email"];
+    const adatok =
+    [
+        {
+            id: "1",
+            name: "MollyWood János",
+            email: "Larissa@MollyWood.hu"
+        },
+        {
+            id: "2",
+            name: "Jónás János",
+            email: "jonas@janosWood.hu"
+        },
+        {
+            id: "3",
+            name: "La Rissa",
+            email: "Larissa@kox.hu"
+        },
+        {
+            id: "4",
+            name: "Da Vinchi",
+            email: "Damuvesz@festmeny.hu"
+        },
+        {
+            id: "5",
+            name: "Leo Nárdó",
+            email: "leonardo@teknoc.hu"
+        }
+    ]
+
+    document.body.onload = function()
+    {
+        addTHeader(fejlec);
+        addTR(adatok);
+    }
+    function addTR(arr)
+    {
+        const table = document.querySelector("table");
+        for(let i = 0; i < arr.length; i++)
+        {
+            const tr = document.createElement("tr");
+            table.appendChild(tr);
+            addTD(tr, arr[i].id);
+            addTD(tr, arr[i].name);
+            addTD(tr, arr[i].email);
+        }
+    }
+
+    function addTD(parent, text)
+    {
+        const tr = document.querySelector("tr");
+        const td = document.createElement("td");
+        td.innerText = text;
+        parent.appendChild(td);
+    }
+
+    /* SAJÁT
+    function addTH(parent, text)
+    {
+        const tr = document.querySelector("tr");
+        const th = document.createElement("th");
+        th.innerText = text;
+        parent.appendChild(th);
+    }
+
+    function addTHeader(arr)
+    {
+        const table = document.querySelector("table");
+        const tr = document.createElement("tr");
+        table.appendChild(tr);
+        for(let i = 0; i < arr.length; i++)
+        {
+            addTH(tr, arr[i]);
+        }
+    }
+    */
+
+    function addTHeader(arr)
+    {
+        const table = document.querySelector("table");
+        const tr = document.createElement("tr");
+        table.appendChild(tr);
+        for(let i = 0; i < arr.length; i++)
+        {
+            const table = document.querySelector("tr");
+            const th = document.createElement("th");
+            th.innerHTML = arr[i];
+            table.appendChild(th);
+        }
+    }
+</script>

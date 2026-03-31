@@ -1,0 +1,67 @@
+*
+{
+    margin: 0 auto;
+    color: rgb(230, 230, 230);
+    background-color: rgb(196, 179, 143);
+    font-weight: 200;
+    text-align: center;
+    font-family: "Motiva Sans", sans-serif;   
+}
+
+.bevasarlo_fejlec
+{
+    margin: 10rem 0 3rem 0;
+    padding: 1px;
+    border-color: rgb(131, 119, 93);
+    border-radius: 60%;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bevasarlo_inputok
+{
+    width: 30rem;
+}
+
+#termek
+{
+    background-color: rgb(134, 114, 67);
+    color: rgb(202, 202, 202);
+    width: 28rem;
+    height: 2rem;
+    border-radius: 10px;
+    padding-left: 0.8rem;
+    text-align: left;
+}
+
+#termek::placeholder
+{
+    color: rgb(202, 202, 202);
+}
+
+#hozzaad
+{
+    background-color: rgb(134, 114, 67);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+#hozzaad:hover
+{
+    background-color: rgb(243, 208, 126);
+    color: black;
+}
+
+.bevasarlo_felsorolas li
+{
+    margin: 6rem 15rem 0rem 15rem;
+    border: 1px solid black;
+    text-align: left;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamikus</title>
+
+    <style>
+        /*.teszt
+        {
+            margin: 2rem;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            border: 2px solid green;
+            text-align: center;
+            color: red;
+            background-color: beige;
+            display: inline-block;
+        }
+            */
+
+        .teszt
+        {
+            margin: 5px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: red;
+            display: inline-block;
+        }
+
+        .uzenet
+        {
+            margin: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="nev">Név</label>
+        <input type="text" id="nev">
+        
+        <br><br>
+
+        <input type="button" id="kuld" value="Küldés">
+        <input type="button" id="add" value="addDiv">
+        <input type="button" id="removeDiv" value="RemoveDiv">
+        <input type="button" id="removeAllDiv" value="RemoveAllDiv">
+
+        <div class="uzenet" id="uzenet"></div>
+        <div class="divlista" id="divlista"></div>
+    </form>
+</body>
+</html>
+
+<script>
+    document.getElementById("kuld").onclick = Udvozles;
+    document.getElementById("add").addEventListener("click", addDiv);
+    document.getElementById("removeDiv").addEventListener("click", removeDiv);
+    document.getElementById("removeAllDiv").addEventListener("click", removeAllDiv);
+
+    function Udvozles()
+    {
+        let nev = document.getElementById("nev").value;
+
+        if(nev.length > 0)
+        {
+            document.getElementById("uzenet").innerHTML= "<br>Üdvözöllek " + nev + "!";
+            document.getElementById("uzenet").style.color = "black";
+        }
+        else
+        {
+            document.getElementById("uzenet").innerHTML = "<br><b>Adj meg egy nevet!</b>";
+            document.getElementById("uzenet").style.color = "red";
+        }
+    }
+
+    function addDiv()
+    {
+        const parent = document.getElementById("divlista"); //Szülő (hova)
+        const div = document.createElement("div"); //Gyerek (létrehozás)
+
+        //div.innerHTML = "Ez egy div";
+        //div.style.color = "green";
+        //div.style.margin = "5px";
+
+        div.className = "teszt";
+        parent.appendChild(div);
+    }
+
+    function removeDiv()
+    {
+        /* --------------- SAJÁT ---------------
+
+        const parent = document.getElementById("divlista");
+        const div = document.getElementsByClassName("teszt");
+
+        if(div.length > 0)
+        {
+            parent.removeChild(div[div.length - 1]);
+        }
+        */
+
+        const div = document.querySelector(".teszt");
+        const parent = document.getElementById("divlista");
+        parent.removeChild(div); 
+    }
+
+    function removeAllDiv()
+    {
+        /* --------------- SAJÁT ---------------
+
+        const parent = document.getElementById("divlista");
+        const div = document.getElementsByClassName("teszt");
+
+        document.getElementById("divlista").innerHTML = "";
+        */
+
+        const listdiv = document.querySelectorAll(".teszt");
+        for(let i = 0; i < listdiv.length; i++)
+        {
+            removeDiv();
+        }
+    }
+</script>

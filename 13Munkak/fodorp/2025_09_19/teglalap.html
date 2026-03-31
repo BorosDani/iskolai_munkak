@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téglalap</title>
+</head>
+<body>
+    <form>
+        <p>Téglalap kerület, terület számítás</p>
+        <input type="number" id="a" name="fname" placeholder="a oldal"><br>
+        <input type="number" id="b" name="lname" placeholder="b oldal"><br><br>
+        <div id="eredmeny"></div>
+        <input type="button" id="gomb" value="Számol">
+      </form> 
+
+      <script>
+        function teglalapK(a, b)
+        {
+            return 2*a + 2*b
+        }
+        function teglalapT(a, b)
+        {
+            return a*b
+        }
+        a = document.getElementById("a");
+        b = document.getElementById("b");
+        document.getElementById("gomb").addEventListener("click", teglalapK)
+      </script>
+</body>
+</html>

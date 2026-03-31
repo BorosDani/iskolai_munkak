@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bevásárló lista</title>
+</head>
+<body>
+    <div class="bevasarlo_fejlec">
+        <h1>Bevásárló lista</h1>
+    </div>
+
+    <div class="bevasarlo_inputok">
+        <form>
+            <input type="text" name="termek" id="termek" placeholder="Larissa, Kristály, Töltőgáz ...">
+            <input type="button" name="hozzaad" id="hozzaad" value="Hozzáadás">
+        </form>
+    </div>
+
+    <div class="bevasarlo_felsorolas">
+        <ul>
+
+        </ul>
+        <br>
+    </div>
+</body>
+</html>
+
+<script>
+    let input = document.getElementById("termek");
+    document.getElementById("hozzaad").addEventListener("click",function()
+    {
+        if(input.value != "")
+        {
+            Hozzaadas();
+        }
+        else
+        {
+            alert("Írjál be valamit!");
+        }
+    });
+
+    function Hozzaadas()
+    {
+        const ul = document.querySelector("ul");
+        const li = document.createElement("li");
+        const span = document.createElement("span");
+        const buttondel = document.createElement("button");
+
+        ul.appendChild(li);
+        span.innerText = document.getElementById("termek").value;
+        li.appendChild(span);
+        buttondel.innerText = "Törlés";
+        buttondel.onclick = function(){ul.removeChild(li)};
+        li.appendChild(buttondel);
+    }
+</script>
