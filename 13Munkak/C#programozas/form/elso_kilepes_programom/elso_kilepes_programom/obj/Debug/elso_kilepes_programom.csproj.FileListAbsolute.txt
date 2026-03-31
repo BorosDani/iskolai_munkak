@@ -1,0 +1,9 @@
+Z:\programozas\FORMOK\elso_kilepes_programom\elso_kilepes_programom\bin\Debug\elso_kilepes_programom.exe.config
+Z:\programozas\FORMOK\elso_kilepes_programom\elso_kilepes_programom\bin\Debug\elso_kilepes_programom.exe
+Z:\programozas\FORMOK\elso_kilepes_programom\elso_kilepes_programom\bin\Debug\elso_kilepes_programom.pdb
+Z:\programozas\FORMOK\elso_kilepes_programom\elso_kilepes_programom\obj\Debug\elso_kilepes_programom.csprojAssemblyReference.cache
+Z:\programozas\FORMOK\elso_kilepes_programom\elso_kilepes_programom\obj\Debug\elso_kilepes_programom.Form1.resources
+Z:\programozas\FORMOK\elso_kilepes_programom\elso_kilepes_programom\obj\Debug\elso_kilepes_programom.Properties.Resources.resources
+Z:\programozas\FORMOK\elso_kilepes_programom\elso_kilepes_programom\obj\Debug\elso_kilepes_programom.csproj.GenerateResource.cache
+Z:\programozas\FORMOK\elso_kilepes_programom\elso_kilepes_programom\obj\Debug\elso_kilepes_programom.exe
+Z:\programozas\FORMOK\elso_kilepes_programom\elso_kilepes_programom\obj\Debug\elso_kilepes_programom.pdb
