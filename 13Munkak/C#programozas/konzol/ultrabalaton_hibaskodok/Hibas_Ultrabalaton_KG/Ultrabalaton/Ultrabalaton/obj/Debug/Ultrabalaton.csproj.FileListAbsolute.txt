@@ -1,0 +1,17 @@
+D:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\bin\Debug\Ultrabalaton.exe.config
+D:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\bin\Debug\Ultrabalaton.exe
+D:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\bin\Debug\Ultrabalaton.pdb
+D:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\obj\Debug\Ultrabalaton.csprojAssemblyReference.cache
+D:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\obj\Debug\Ultrabalaton.exe
+D:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\obj\Debug\Ultrabalaton.pdb
+E:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\bin\Debug\Ultrabalaton.exe.config
+E:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\bin\Debug\Ultrabalaton.exe
+E:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\bin\Debug\Ultrabalaton.pdb
+E:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\obj\Debug\Ultrabalaton.csproj.AssemblyReference.cache
+E:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\obj\Debug\Ultrabalaton.exe.config
+E:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\obj\Debug\Ultrabalaton.csproj.CoreCompileInputs.cache
+E:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\obj\Debug\Ultrabalaton.exe
+E:\Programozas\Ultrabalaton\Ultrabalaton\Ultrabalaton\obj\Debug\Ultrabalaton.pdb
+Z:\programozas\ultrabalaton_hibaskodok\Hibas_Ultrabalaton_KG\Ultrabalaton\Ultrabalaton\obj\Debug\Ultrabalaton.csprojAssemblyReference.cache
+Z:\programozas\ultrabalaton_hibaskodok\Hibas_Ultrabalaton_KG\Ultrabalaton\Ultrabalaton\obj\Debug\Ultrabalaton.exe
+Z:\programozas\ultrabalaton_hibaskodok\Hibas_Ultrabalaton_KG\Ultrabalaton\Ultrabalaton\obj\Debug\Ultrabalaton.pdb
