@@ -1,0 +1,14 @@
+Z:\programozas\Footgolf\footgolf\footgolf\bin\Debug\footgolf.exe.config
+Z:\programozas\Footgolf\footgolf\footgolf\bin\Debug\footgolf.exe
+Z:\programozas\Footgolf\footgolf\footgolf\bin\Debug\footgolf.pdb
+Z:\programozas\Footgolf\footgolf\footgolf\obj\Debug\footgolf.csprojAssemblyReference.cache
+Z:\programozas\Footgolf\footgolf\footgolf\obj\Debug\footgolf.exe
+Z:\programozas\Footgolf\footgolf\footgolf\obj\Debug\footgolf.pdb
+C:\Users\boros\Downloads\Footgolf\Footgolf\footgolf\obj\Debug\footgolf.csproj.AssemblyReference.cache
+C:\Users\boros\Downloads\Footgolf\Footgolf\footgolf\obj\Debug\footgolf.exe.config
+C:\Users\boros\Downloads\Footgolf\Footgolf\footgolf\obj\Debug\footgolf.csproj.CoreCompileInputs.cache
+C:\Users\boros\Downloads\Footgolf\Footgolf\footgolf\obj\Debug\footgolf.exe
+C:\Users\boros\Downloads\Footgolf\Footgolf\footgolf\obj\Debug\footgolf.pdb
+C:\Users\boros\Downloads\Footgolf\Footgolf\footgolf\bin\Debug\footgolf.exe.config
+C:\Users\boros\Downloads\Footgolf\Footgolf\footgolf\bin\Debug\footgolf.exe
+C:\Users\boros\Downloads\Footgolf\Footgolf\footgolf\bin\Debug\footgolf.pdb

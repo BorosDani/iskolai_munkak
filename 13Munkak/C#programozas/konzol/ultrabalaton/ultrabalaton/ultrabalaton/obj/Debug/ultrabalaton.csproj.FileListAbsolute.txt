@@ -1,0 +1,14 @@
+C:\Users\boros\Downloads\ultrabalaton\ultrabalaton\ultrabalaton\bin\Debug\ultrabalaton.exe.config
+C:\Users\boros\Downloads\ultrabalaton\ultrabalaton\ultrabalaton\bin\Debug\ultrabalaton.exe
+C:\Users\boros\Downloads\ultrabalaton\ultrabalaton\ultrabalaton\bin\Debug\ultrabalaton.pdb
+C:\Users\boros\Downloads\ultrabalaton\ultrabalaton\ultrabalaton\obj\Debug\ultrabalaton.csproj.AssemblyReference.cache
+C:\Users\boros\Downloads\ultrabalaton\ultrabalaton\ultrabalaton\obj\Debug\ultrabalaton.csproj.CoreCompileInputs.cache
+C:\Users\boros\Downloads\ultrabalaton\ultrabalaton\ultrabalaton\obj\Debug\ultrabalaton.exe
+C:\Users\boros\Downloads\ultrabalaton\ultrabalaton\ultrabalaton\obj\Debug\ultrabalaton.pdb
+C:\Users\boros\Downloads\ultrabalaton\ultrabalaton\ultrabalaton\obj\Debug\ultrabalaton.exe.config
+Z:\programozas\ultrabalaton\ultrabalaton\ultrabalaton\bin\Debug\ultrabalaton.exe.config
+Z:\programozas\ultrabalaton\ultrabalaton\ultrabalaton\bin\Debug\ultrabalaton.exe
+Z:\programozas\ultrabalaton\ultrabalaton\ultrabalaton\bin\Debug\ultrabalaton.pdb
+Z:\programozas\ultrabalaton\ultrabalaton\ultrabalaton\obj\Debug\ultrabalaton.csprojAssemblyReference.cache
+Z:\programozas\ultrabalaton\ultrabalaton\ultrabalaton\obj\Debug\ultrabalaton.exe
+Z:\programozas\ultrabalaton\ultrabalaton\ultrabalaton\obj\Debug\ultrabalaton.pdb
