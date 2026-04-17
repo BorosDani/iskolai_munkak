@@ -1,0 +1,7 @@
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\Debug\kalapacsvetes.txt
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\Debug\Kalapacsvetes.exe.config
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\Debug\Kalapacsvetes.exe
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\Debug\Kalapacsvetes.pdb
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.csprojAssemblyReference.cache
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.exe
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.pdb
