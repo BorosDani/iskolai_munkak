@@ -5,3 +5,12 @@ Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\De
 Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.csprojAssemblyReference.cache
 Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.exe
 Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.pdb
+C:\Users\boros\Downloads\iskolai_munkak-main\iskolai_munkak-main\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\Debug\kalapacsvetes.txt
+C:\Users\boros\Downloads\iskolai_munkak-main\iskolai_munkak-main\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\Debug\Kalapacsvetes.exe.config
+C:\Users\boros\Downloads\iskolai_munkak-main\iskolai_munkak-main\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\Debug\Kalapacsvetes.exe
+C:\Users\boros\Downloads\iskolai_munkak-main\iskolai_munkak-main\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\Debug\Kalapacsvetes.pdb
+C:\Users\boros\Downloads\iskolai_munkak-main\iskolai_munkak-main\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.csproj.AssemblyReference.cache
+C:\Users\boros\Downloads\iskolai_munkak-main\iskolai_munkak-main\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.exe.config
+C:\Users\boros\Downloads\iskolai_munkak-main\iskolai_munkak-main\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.csproj.CoreCompileInputs.cache
+C:\Users\boros\Downloads\iskolai_munkak-main\iskolai_munkak-main\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.exe
+C:\Users\boros\Downloads\iskolai_munkak-main\iskolai_munkak-main\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.pdb

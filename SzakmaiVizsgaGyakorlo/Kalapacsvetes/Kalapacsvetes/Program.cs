@@ -15,8 +15,11 @@ namespace Kalapacsvetes
             beolvas();
             feladat5();
             feladat6();
+            feladat7();
+            feladat8();
             Console.ReadLine();
         }
+
 
         private static void beolvas() 
         {
@@ -35,6 +38,7 @@ namespace Kalapacsvetes
             Console.WriteLine($"4. feladat: {adatok.Count()} dobás eredménye található.");
         }
 
+
         private static void feladat5() 
         {
             double atlagEredmeny = 0;
@@ -51,6 +55,7 @@ namespace Kalapacsvetes
             Console.WriteLine($"5. feladat: A magyar sportolók átlagosan {Math.Round(atlagEredmeny / magyarokSzama, 2)} métert dobtak.");
         }
 
+
         private static void feladat6() 
         {
             Console.WriteLine("6. feladat: Adjon meg egy évszámot:");
@@ -63,8 +68,52 @@ namespace Kalapacsvetes
                 if (Convert.ToInt32(adat.datum.Split('.')[0]) == keresettEvszam) 
                 {
                     dobasokSzamaAzEvben++;
+                    versenyzok.Add(adat.sportolo);
                 }
             }
+
+            if (dobasokSzamaAzEvben > 0)
+            {
+                Console.WriteLine($"\t{dobasokSzamaAzEvben} darab dobás került be ebben az évben.");
+                foreach (var adat in versenyzok)
+                {
+                    Console.WriteLine("\t" + adat);
+                }
+            }
+
+            else 
+            {
+                Console.WriteLine("\tEgy dobás sem került be bben az évben.");
+            }
+        }
+
+
+        private static void feladat7()
+        {
+            Console.WriteLine("7. feladat: Statisztika");
+
+            var statisztika = adatok.GroupBy(a => a.orszagKod);
+
+            foreach (var csoport in statisztika)
+            {
+                Console.WriteLine($"\t{csoport.Key} - {csoport.Count()} dobás");
+            }
+        }
+
+
+        private static void feladat8()
+        {
+            StreamWriter irocsatorna = new StreamWriter("magyarok.txt");
+           
+            foreach (var adat in adatok)
+            {
+                if (adat.orszagKod == "HUN")
+                {
+                    irocsatorna.WriteLine($"{adat.helyezes};{adat.eredmeny};{adat.sportolo};{adat.orszagKod};{adat.helyszin};{adat.datum}");
+                }
+            }
+
+            irocsatorna.Close();
         }
     }
 }
