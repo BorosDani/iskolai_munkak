@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fuggohid", "Fuggohid\Fuggohid.csproj", "{134B45AC-05B0-4A49-99F4-3498936C3270}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{134B45AC-05B0-4A49-99F4-3498936C3270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{134B45AC-05B0-4A49-99F4-3498936C3270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{134B45AC-05B0-4A49-99F4-3498936C3270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{134B45AC-05B0-4A49-99F4-3498936C3270}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62EF1CD1-6F93-4449-8E33-15AFA3344140}
+	EndGlobalSection
+EndGlobal

@@ -15,8 +15,6 @@ namespace Kalapacsvetes
             beolvas();
             feladat5();
             feladat6();
-            feladat7();
-            feladat8();
             Console.ReadLine();
         }
 
@@ -52,11 +50,19 @@ namespace Kalapacsvetes
                 }
             }
 
+            /*MÁSIK MEGOLDÁS (jobb)
+             * 
+            double magyarAtlag = 
+                (from adat in adatok 
+                 where adat.orszagKod == "HUN" 
+                 select adat.eredmeny).Average();
+            */
+
             Console.WriteLine($"5. feladat: A magyar sportolók átlagosan {Math.Round(atlagEredmeny / magyarokSzama, 2)} métert dobtak.");
         }
 
 
-        private static void feladat6() 
+        private static void feladat6()
         {
             Console.WriteLine("6. feladat: Adjon meg egy évszámot:");
             int keresettEvszam = Convert.ToInt32(Console.ReadLine());
@@ -65,7 +71,7 @@ namespace Kalapacsvetes
 
             foreach (var adat in adatok)
             {
-                if (Convert.ToInt32(adat.datum.Split('.')[0]) == keresettEvszam) 
+                if (Convert.ToInt32(adat.datum.Split('.')[0]) == keresettEvszam)
                 {
                     dobasokSzamaAzEvben++;
                     versenyzok.Add(adat.sportolo);
@@ -81,7 +87,7 @@ namespace Kalapacsvetes
                 }
             }
 
-            else 
+            else
             {
                 Console.WriteLine("\tEgy dobás sem került be bben az évben.");
             }
@@ -104,7 +110,7 @@ namespace Kalapacsvetes
         private static void feladat8()
         {
             StreamWriter irocsatorna = new StreamWriter("magyarok.txt");
-           
+
             foreach (var adat in adatok)
             {
                 if (adat.orszagKod == "HUN")
