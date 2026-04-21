@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fuggohid
 {
-    class Fuggohid
+    public class Fuggohid
     {
         public int helyezes;
         public string nev;

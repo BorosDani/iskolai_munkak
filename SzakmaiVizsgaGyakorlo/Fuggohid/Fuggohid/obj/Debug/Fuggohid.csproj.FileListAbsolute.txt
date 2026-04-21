@@ -1,0 +1,12 @@
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\bin\Debug\fuggohidak.csv
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\bin\Debug\Fuggohid.exe.config
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\bin\Debug\Fuggohid.exe
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\bin\Debug\Fuggohid.pdb
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\obj\Debug\Fuggohid.csproj.AssemblyReference.cache
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\obj\Debug\Fuggohid.Form1.resources
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\obj\Debug\Fuggohid.Properties.Resources.resources
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\obj\Debug\Fuggohid.csproj.GenerateResource.cache
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\obj\Debug\Fuggohid.csproj.CoreCompileInputs.cache
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\obj\Debug\Fuggohid.exe
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\obj\Debug\Fuggohid.pdb
+Z:\programozas\KONZOLOS\SzakmaiVizsgaGyakorlo\Fuggohid\Fuggohid\obj\Debug\Fuggohid.Form2.resources

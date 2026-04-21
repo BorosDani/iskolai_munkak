@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.nevLB = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fajlTSM = new System.Windows.Forms.ToolStripMenuItem();
             this.keresesTSM = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,22 +42,23 @@
             this.hosszTxt = new System.Windows.Forms.TextBox();
             this.evTxt = new System.Windows.Forms.TextBox();
             this.hidSzamGB = new System.Windows.Forms.GroupBox();
-            this.kettoElottRB = new System.Windows.Forms.RadioButton();
-            this.kettobenRB = new System.Windows.Forms.RadioButton();
-            this.darabTxt = new System.Windows.Forms.TextBox();
             this.darabLbl = new System.Windows.Forms.Label();
+            this.darabTxt = new System.Windows.Forms.TextBox();
+            this.kettobenRB = new System.Windows.Forms.RadioButton();
+            this.kettoElottRB = new System.Windows.Forms.RadioButton();
             this.kilepesBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.hidSzamGB.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listBox1
+            // nevLB
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(23, 37);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(218, 212);
-            this.listBox1.TabIndex = 0;
+            this.nevLB.FormattingEnabled = true;
+            this.nevLB.Location = new System.Drawing.Point(23, 37);
+            this.nevLB.Name = "nevLB";
+            this.nevLB.Size = new System.Drawing.Size(218, 212);
+            this.nevLB.TabIndex = 0;
+            this.nevLB.SelectedIndexChanged += new System.EventHandler(this.nevLB_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -83,6 +84,7 @@
             this.keresesTSM.Name = "keresesTSM";
             this.keresesTSM.Size = new System.Drawing.Size(58, 20);
             this.keresesTSM.Text = "Keresés";
+            this.keresesTSM.Click += new System.EventHandler(this.keresesTSM_Click);
             // 
             // kilepesTSM
             // 
@@ -130,28 +132,28 @@
             // 
             this.helyTxt.Location = new System.Drawing.Point(328, 54);
             this.helyTxt.Name = "helyTxt";
-            this.helyTxt.Size = new System.Drawing.Size(100, 20);
+            this.helyTxt.Size = new System.Drawing.Size(126, 20);
             this.helyTxt.TabIndex = 6;
             // 
             // orszagTxt
             // 
             this.orszagTxt.Location = new System.Drawing.Point(328, 107);
             this.orszagTxt.Name = "orszagTxt";
-            this.orszagTxt.Size = new System.Drawing.Size(100, 20);
+            this.orszagTxt.Size = new System.Drawing.Size(126, 20);
             this.orszagTxt.TabIndex = 7;
             // 
             // hosszTxt
             // 
             this.hosszTxt.Location = new System.Drawing.Point(328, 157);
             this.hosszTxt.Name = "hosszTxt";
-            this.hosszTxt.Size = new System.Drawing.Size(100, 20);
+            this.hosszTxt.Size = new System.Drawing.Size(126, 20);
             this.hosszTxt.TabIndex = 8;
             // 
             // evTxt
             // 
             this.evTxt.Location = new System.Drawing.Point(328, 206);
             this.evTxt.Name = "evTxt";
-            this.evTxt.Size = new System.Drawing.Size(100, 20);
+            this.evTxt.Size = new System.Drawing.Size(126, 20);
             this.evTxt.TabIndex = 9;
             // 
             // hidSzamGB
@@ -167,16 +169,21 @@
             this.hidSzamGB.TabStop = false;
             this.hidSzamGB.Text = "Hidak száma";
             // 
-            // kettoElottRB
+            // darabLbl
             // 
-            this.kettoElottRB.AutoSize = true;
-            this.kettoElottRB.Location = new System.Drawing.Point(36, 32);
-            this.kettoElottRB.Name = "kettoElottRB";
-            this.kettoElottRB.Size = new System.Drawing.Size(98, 17);
-            this.kettoElottRB.TabIndex = 0;
-            this.kettoElottRB.TabStop = true;
-            this.kettoElottRB.Text = "2000 előtt épült";
-            this.kettoElottRB.UseVisualStyleBackColor = true;
+            this.darabLbl.AutoSize = true;
+            this.darabLbl.Location = new System.Drawing.Point(142, 114);
+            this.darabLbl.Name = "darabLbl";
+            this.darabLbl.Size = new System.Drawing.Size(34, 13);
+            this.darabLbl.TabIndex = 11;
+            this.darabLbl.Text = "darab";
+            // 
+            // darabTxt
+            // 
+            this.darabTxt.Location = new System.Drawing.Point(36, 111);
+            this.darabTxt.Name = "darabTxt";
+            this.darabTxt.Size = new System.Drawing.Size(100, 20);
+            this.darabTxt.TabIndex = 11;
             // 
             // kettobenRB
             // 
@@ -188,22 +195,19 @@
             this.kettobenRB.TabStop = true;
             this.kettobenRB.Text = "2000-ben vagy utána";
             this.kettobenRB.UseVisualStyleBackColor = true;
+            this.kettobenRB.CheckedChanged += new System.EventHandler(this.kettobenRB_CheckedChanged);
             // 
-            // darabTxt
+            // kettoElottRB
             // 
-            this.darabTxt.Location = new System.Drawing.Point(36, 111);
-            this.darabTxt.Name = "darabTxt";
-            this.darabTxt.Size = new System.Drawing.Size(100, 20);
-            this.darabTxt.TabIndex = 11;
-            // 
-            // darabLbl
-            // 
-            this.darabLbl.AutoSize = true;
-            this.darabLbl.Location = new System.Drawing.Point(142, 114);
-            this.darabLbl.Name = "darabLbl";
-            this.darabLbl.Size = new System.Drawing.Size(34, 13);
-            this.darabLbl.TabIndex = 11;
-            this.darabLbl.Text = "darab";
+            this.kettoElottRB.AutoSize = true;
+            this.kettoElottRB.Location = new System.Drawing.Point(36, 32);
+            this.kettoElottRB.Name = "kettoElottRB";
+            this.kettoElottRB.Size = new System.Drawing.Size(98, 17);
+            this.kettoElottRB.TabIndex = 0;
+            this.kettoElottRB.TabStop = true;
+            this.kettoElottRB.Text = "2000 előtt épült";
+            this.kettoElottRB.UseVisualStyleBackColor = true;
+            this.kettoElottRB.CheckedChanged += new System.EventHandler(this.kettoElottRB_CheckedChanged);
             // 
             // kilepesBtn
             // 
@@ -230,11 +234,11 @@
             this.Controls.Add(this.hosszLbl);
             this.Controls.Add(this.orszagLbl);
             this.Controls.Add(this.helyLbl);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.nevLB);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Függőhidak";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.hidSzamGB.ResumeLayout(false);
@@ -246,7 +250,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox nevLB;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fajlTSM;
         private System.Windows.Forms.ToolStripMenuItem keresesTSM;

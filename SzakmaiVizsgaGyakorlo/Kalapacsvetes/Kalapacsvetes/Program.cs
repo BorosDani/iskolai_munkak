@@ -15,6 +15,8 @@ namespace Kalapacsvetes
             beolvas();
             feladat5();
             feladat6();
+            feladat7();
+            feladat8();
             Console.ReadLine();
         }
 
